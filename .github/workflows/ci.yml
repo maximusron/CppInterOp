@@ -31,15 +31,6 @@ jobs:
             coverage: true
             extra_cmake_options: '-DLLVM_USE_LINKER=lld'
 
-          - name: ubu22-gcc9-clang13-cling-cppyy
-            os: ubuntu-22.04
-            compiler: gcc-9
-            clang-runtime: '13'
-            cling: On
-            cling-version: '1.0'
-            cppyy: On
-            extra_cmake_options: '-DLLVM_USE_LINKER=lld'
-
           #Block commented out until free tier for m1
           #exists (expected sometime 2024) and key for os 
           #can be replaced
