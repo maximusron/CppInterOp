@@ -30,17 +30,6 @@ jobs:
             cppyy: On
             coverage: true
             extra_cmake_options: '-DLLVM_USE_LINKER=lld'
-
-          #Block commented out until free tier for m1
-          #exists (expected sometime 2024) and key for os 
-          #can be replaced
-          #- name: osx13-arm64-clang-clang-repl-17
-          #  os: macos-13-arm64
-          #  compiler: clang
-          #  clang-runtime: '17'
-          #  cling: Off
-          #  cppyy: Off
-          #
           #- name: osx13-arm64-clang-clang-repl-17-cppyy
           #  os: macos-13-arm64
           #  compiler: clang
